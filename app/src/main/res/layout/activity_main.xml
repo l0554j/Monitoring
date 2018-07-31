@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/bg_head"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+              android:id="@+id/main_battery_voltage"
+                style="@style/main_text_click"
+                android:text="@string/main_battery_voltage" />
+
+            <TextView
+              android:id="@+id/main_battery_voltage_value"
+                style="@style/main_text"
+                android:hint="@string/click_get" />
+            <!-- android:text="52.35V" -->
+        </LinearLayout>
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+              android:id="@+id/main_charge_current"
+                style="@style/main_text_click"
+                android:text="@string/main_charge_current" />
+
+            <TextView
+              android:id="@+id/main_charge_current_value"
+                style="@style/main_text"
+                android:hint="@string/click_get" />
+            <!-- android:text="2.85A" -->
+        </LinearLayout>
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+              android:id="@+id/main_already_over"
+                style="@style/main_text_click"
+                android:text="@string/main_already_over" />
+
+            <TextView
+              android:id="@+id/main_already_over_value"
+                style="@style/main_text"
+                android:hint="@string/click_get" />
+            <!-- android:text="25%" -->
+        </LinearLayout>
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+              android:id="@+id/main_already_charge_time"
+                style="@style/main_text_click"
+                android:text="@string/main_already_charge_time" />
+
+            <TextView
+              android:id="@+id/main_already_charge_time_value"
+                style="@style/main_text"
+                android:hint="@string/click_get" />
+            <!-- android:text="02H05M08S" -->
+        </LinearLayout>
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+              android:id="@+id/main_estimated_time_of_completion"
+                style="@style/main_text_click"
+                android:text="@string/main_estimated_time_of_completion" />
+
+            <TextView
+              android:id="@+id/main_estimated_time_of_completion_value"
+                style="@style/main_text"
+                android:hint="@string/click_get" />
+            <!-- android:text="03H15M" -->
+        </LinearLayout>
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+              android:id="@+id/main_date_of_manufacture"
+                style="@style/main_text_click"
+                android:text="@string/main_date_of_manufacture" />
+
+            <TextView
+              android:id="@+id/main_date_of_manufacture_value"
+                style="@style/main_text"
+                android:hint="@string/click_get" />
+            <!-- android:text="2014-03-02" -->
+        </LinearLayout>
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/main_pause"
+                style="@style/main_button"
+                android:text="@string/main_pause" />
+
+        <View 
+            android:layout_width="10dip"
+            android:layout_height="50dip" 
+            android:layout_gravity="bottom"
+            android:paddingBottom="-10dip"
+            android:background="@drawable/bg_line_shu_up"
+             />
+        
+            <Button
+                android:id="@+id/main_electricize"
+                style="@style/main_button"
+                android:text="@string/main_electricize" />
+        </LinearLayout>
+
+        <View style="@style/line_style"
+            android:layout_marginTop="-10dip" 
+            android:layout_marginBottom="-10dip" 
+            />
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/main_order_set"
+                style="@style/main_button"
+                android:text="@string/main_order_set" />
+ <View 
+            android:layout_width="10dip"
+            android:layout_height="50dip" 
+            android:layout_gravity="top"
+            android:background="@drawable/bg_line_shu_down"
+             />
+            <Button
+                android:id="@+id/main_order_electricize"
+                style="@style/main_button"
+                android:text="@string/main_order_electricize" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_below="@+id/middle_layout"
+        android:background="@drawable/bg_line_heng"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        >
+    <LinearLayout 
+        android:id="@+id/collect_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        
+        android:id="@+id/bluetooth_collect"
+        style="@style/main_text_click"
+        android:text="蓝牙连接方式" />
+    <TextView
+        android:id="@+id/wifi_collect"
+        style="@style/main_text_click"
+        android:text="Wifi连接方式" />
+    </LinearLayout>
+    <LinearLayout 
+        
+        android:id="@+id/wifi_layout"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:id="@+id/collect_wifi"
+        style="@style/main_text_click"
+        android:text="选择网络" />
+    <TextView
+        android:id="@+id/collect_equipment"
+        style="@style/main_text_click"
+        android:text="连接设备" />
+    </LinearLayout>
+    <LinearLayout 
+        
+        android:id="@+id/blutooth_layout"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:id="@+id/collect_blutooth"
+        style="@style/main_text_click"
+        android:text="连接蓝牙" />
+    </LinearLayout>
+    </LinearLayout>
+        <!-- android:text="@string/company_name" -->
+
+</RelativeLayout>

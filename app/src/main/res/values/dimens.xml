@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="info_avatar_bg">76dip</dimen>
+    <dimen name="info_avatar">70dip</dimen>
+    <!-- 标题高度 -->
+    <dimen name="nvbar_height">50dip</dimen>
+    <!-- 注册用户名等与左边的距离 -->
+    <dimen name="register_marginleft">20dp</dimen>
+    
+    <dimen name="radius_size">10px</dimen>
+</resources>

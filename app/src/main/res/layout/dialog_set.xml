@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/main_text"
+        android:layout_weight="0"
+        android:background="@drawable/measurement_complete_bg_top"
+        android:text="@string/dialog_order_set" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/measurement_complete_bg_bottom"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View style="@style/line_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+                <TextView
+                    style="@style/main_text"
+                    android:text="@string/main_estimated_time_of_completion" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/edit_hour"
+                    style="@style/main_text"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:text="03" />
+                <TextView
+                android:layout_weight="2"
+                    style="@style/main_text"
+                    android:text="小时" />
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/edit_minute"
+                    style="@style/main_text"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:text="15" />
+
+                <TextView
+                android:layout_weight="2"
+                    style="@style/main_text"
+                    android:text="分钟" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/line_style" />
+
+            <TextView
+                android:id="@+id/dialog_content"
+                style="@style/main_text"
+                android:layout_weight="0"
+                android:gravity="top"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:text="@string/dialog_warn" />
+
+            <Button
+                android:id="@+id/btn_01"
+                style="@style/main_button"
+                android:text="@string/dialog_order_ok" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="battery_yellow">#ff9700</color>
+    <color name="setting_item_bg_s">#22000000</color>
+	<color name="trans">#00000000</color>
+	<color name="grey_line">#ddd</color>
+	<color name="setting_grey_disable">#bbb</color>
+	<color name="setting_grey">#646464</color>
+    <color name="blue">#0784bc</color>
+    <color name="red">#fe6665</color>
+	<color name="drak_grey">#555</color>
+	<color name="grey">#999</color>
+	
+	  <!-- 标题头左右两边字颜色 -->
+	<color name="vabar_text_color_down">#AA77AF</color>
+	<color name="vabar_text_color">#248CFF</color>
+	
+	
+	<color name="ecg_line">#D4D5D4</color>
+	<color name="gray">#555555</color>
+	
+	
+	<color name="title_top_color">#f8f8f8</color>
+	<color name="title_top_color_down">#e5e5e5</color>
+	
+	<!-- 背景颜色 -->
+    <color name="bg_color">#F0EFF4</color>
+    <!-- 标题头背景颜色 -->
+	<color name="top_title_bg">#F9F9F9</color>
+</resources>
