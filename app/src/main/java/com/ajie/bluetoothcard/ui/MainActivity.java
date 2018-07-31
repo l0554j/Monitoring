@@ -25,6 +25,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/** 主界面 */
 public class MainActivity extends BaseActivity  {
 	protected static final String TAG = MainActivity.class.getSimpleName();
 	private Button main_pause, main_electricize, main_order_set,main_order_electricize;
